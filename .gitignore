@@ -1,3 +1,23 @@
-./backend/bin
-./backend/obj
-./backend/.vscode
+# === Compilação do .NET (Geral) ===
+# O 'subdiretorio/' ignora as pastas bin e obj em qualquer nível do projeto
+bin/
+obj/
+
+# === Configurações do VS Code ===
+.vscode/
+*.code-workspace
+
+# === Arquivos de Usuário e Logs ===
+*.log
+*.user
+*.suo
+
+# === Sistema Operacional ===
+Thumbs.db
+.DS_Store
+
+# === Seguranca (Obrigatório para o seu projeto) ===
+# Evita que você suba sua chave do Gemini por acidente se salvar em arquivo
+.env
+*.env.local
+appsettings.Development.json
